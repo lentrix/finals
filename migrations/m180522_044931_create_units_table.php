@@ -17,7 +17,8 @@ class m180522_044931_create_units_table extends Migration
             'make' => $this->string(45)->notNull(),
             'model' => $this->string(45)->notNull(),
             'plate' => $this->string(20)->notNull(),
-            'condition' => $this->integer(1)->defaultValue(1)
+            'condition' => $this->integer(1)->defaultValue(1),
+            'dateAcquired' => $this->date()->notNull()
         ]);
     }
 
